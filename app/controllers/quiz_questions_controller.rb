@@ -33,7 +33,7 @@ class QuizQuestionsController < ApplicationController
 
   # PUT quizzes/1/quiz_questions/1
   def update
-    if @quiz_question.update_attributes(quiz_question_params)
+    if @quiz_question.update_attribute(quiz_question_params, nil)
       redirect_to([@quiz_question.quiz, @quiz_question], notice: 'Quiz question was successfully updated.')
     else
       render action: 'edit'
