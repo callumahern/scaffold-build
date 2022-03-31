@@ -8,12 +8,3 @@ class CreateAnswerOptions < ActiveRecord::Migration[6.1]
     end
   end
 end
-
-# quiz - many questions - many answer_options - answer 
-
-
-# if answer 
-#   well done 
-# else
-#   wrong
-# end

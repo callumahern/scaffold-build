@@ -5,10 +5,9 @@
   <%= @quiz_question.question %>
 </p>
 
-<p>
-  <b>Quiz:</b>
-  <%= @quiz_question.quiz.title %>
-</p>
+<p>Answers choices:</p>
+
+<%= @quiz_question.answer_options %>
 
 
 <%= link_to 'Edit', edit_quiz_quiz_question_path(@quiz_question.quiz, @quiz_question) %> |
