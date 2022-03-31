@@ -10,5 +10,6 @@
   <%= @quiz.summary %>
 </p>
 
+<%= link_to 'Questions', quiz_quiz_questions_path(@quiz) %> |
 <%= link_to 'Edit', edit_quiz_path(@quiz) %> |
 <%= link_to 'Back', quizzes_path %>
